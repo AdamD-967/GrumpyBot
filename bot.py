@@ -1,12 +1,10 @@
 import os
 from random import choice
 from datetime import datetime as dtm
-from dotenv import load_dotenv
 from discord.ext import commands
 from memer import *
 from youtube import YTDLSource
 
-load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 bot = commands.Bot(command_prefix="wrr ")
