@@ -17,6 +17,7 @@ async def on_ready():
 @bot.event
 async def on_command_error(ctx, err):
     await ctx.send("No chyba nje")
+    raise err
 
 
 @bot.command(name="wrr")
